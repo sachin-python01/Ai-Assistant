@@ -12,7 +12,7 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 # Function to generate image using the API
 def generate_image(prompt=None):
     API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2"
-    HEADERS = {"Authorization": "Bearer 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"}
+    HEADERS = {"Authorization": "Bearer API_KEY"}  #enter your own api key at place of Api_key
 
     if prompt is None or prompt.strip() == "":  # Ask only if no prompt is given
         speak("What should I generate?")
